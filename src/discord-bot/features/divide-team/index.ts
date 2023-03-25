@@ -22,7 +22,7 @@ import { DivideTeamInput } from '@src/discord-bot/dtos/divide-team.dto';
 @Command({
   name: '팀나누기',
   description: '팀을 나눌 수 있어요.',
-  dmPermission: true,
+  defaultMemberPermissions: 'UseApplicationCommands',
 })
 @Injectable()
 export class DivideTeam {
